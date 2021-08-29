@@ -19,6 +19,7 @@
 		7430FA2926DB870F0051FEEE /* PlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2826DB870F0051FEEE /* PlayList.swift */; };
 		7430FA2C26DB891B0051FEEE /* Playback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2B26DB891B0051FEEE /* Playback.swift */; };
 		7430FA2E26DB90A20051FEEE /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2D26DB90A20051FEEE /* NavigationBar.swift */; };
+		7430FA3026DB92D80051FEEE /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2F26DB92D80051FEEE /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		7430FA2826DB870F0051FEEE /* PlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayList.swift; sourceTree = "<group>"; };
 		7430FA2B26DB891B0051FEEE /* Playback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playback.swift; sourceTree = "<group>"; };
 		7430FA2D26DB90A20051FEEE /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		7430FA2F26DB92D80051FEEE /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				7430FA2426DB867D0051FEEE /* Colors.swift */,
 				7430FA2B26DB891B0051FEEE /* Playback.swift */,
 				7430FA2D26DB90A20051FEEE /* NavigationBar.swift */,
+				7430FA2F26DB92D80051FEEE /* Artwork.swift */,
 				7430FA2A26DB87200051FEEE /* Models */,
 				7430F9F926DB824C0051FEEE /* ContentView.swift */,
 				7430F9FB26DB824E0051FEEE /* Assets.xcassets */,
@@ -288,6 +291,7 @@
 			files = (
 				7430FA2726DB86D30051FEEE /* Song.swift in Sources */,
 				7430FA2926DB870F0051FEEE /* PlayList.swift in Sources */,
+				7430FA3026DB92D80051FEEE /* Artwork.swift in Sources */,
 				7430F9FA26DB824C0051FEEE /* ContentView.swift in Sources */,
 				7430FA2526DB867D0051FEEE /* Colors.swift in Sources */,
 				7430FA2E26DB90A20051FEEE /* NavigationBar.swift in Sources */,
