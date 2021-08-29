@@ -56,6 +56,8 @@ struct PlayListItem: View {
         .onTapGesture {
             playback.play(id: song.id)
         }
+        .fullScreenCover(isPresented: $isPresented)
+            { Actions(song: song) }
     }
 }
 
