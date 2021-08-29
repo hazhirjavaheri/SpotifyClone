@@ -24,6 +24,7 @@
 		7430FA3426DB94280051FEEE /* PlayListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3326DB94280051FEEE /* PlayListItem.swift */; };
 		7430FA3626DB94E50051FEEE /* PlayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3526DB94E50051FEEE /* PlayListView.swift */; };
 		7430FA3926DB95720051FEEE /* PlayListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3826DB95720051FEEE /* PlayListPage.swift */; };
+		7430FA3B26DB95E20051FEEE /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3A26DB95E20051FEEE /* MiniPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		7430FA3326DB94280051FEEE /* PlayListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListItem.swift; sourceTree = "<group>"; };
 		7430FA3526DB94E50051FEEE /* PlayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListView.swift; sourceTree = "<group>"; };
 		7430FA3826DB95720051FEEE /* PlayListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListPage.swift; sourceTree = "<group>"; };
+		7430FA3A26DB95E20051FEEE /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		7430F9EB26DB824C0051FEEE = {
 			isa = PBXGroup;
 			children = (
+				7430FA3A26DB95E20051FEEE /* MiniPlayer.swift */,
 				7430F9F626DB824C0051FEEE /* SpotifyClone */,
 				7430FA0826DB824E0051FEEE /* SpotifyCloneTests */,
 				7430FA1326DB824E0051FEEE /* SpotifyCloneUITests */,
@@ -315,6 +318,7 @@
 				7430FA2926DB870F0051FEEE /* PlayList.swift in Sources */,
 				7430FA3226DB93BA0051FEEE /* PlayButton.swift in Sources */,
 				7430FA3026DB92D80051FEEE /* Artwork.swift in Sources */,
+				7430FA3B26DB95E20051FEEE /* MiniPlayer.swift in Sources */,
 				7430F9FA26DB824C0051FEEE /* ContentView.swift in Sources */,
 				7430FA2526DB867D0051FEEE /* Colors.swift in Sources */,
 				7430FA2E26DB90A20051FEEE /* NavigationBar.swift in Sources */,
