@@ -36,7 +36,7 @@ struct Player: View {
                         .lineLimit(1)
                     
                     Spacer()
-                    
+                    // Present Actions sheet
                     Button(action: {
                         if let _ = playback.currentSongIndex {
                             isPresented = true
@@ -150,7 +150,7 @@ struct Player: View {
                     .font(.title)
                 }
                 .padding(.bottom, 40)
-                .padding(.horizontal, /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                .padding(.horizontal, 10)
                 Spacer()
             }
             .foregroundColor(.white)

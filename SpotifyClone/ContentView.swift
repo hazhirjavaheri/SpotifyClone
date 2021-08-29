@@ -12,6 +12,7 @@ enum Tab {
 }
 
 struct ContentView: View {
+    @EnvironmentObject var playback: Playback
     @State private var selection: Tab = .library
 
     init() {
@@ -27,7 +28,7 @@ struct ContentView: View {
                 Text("Search")
                     .tabItem { Label("Search", systemImage: "magnifyingglass")
                     }.tag(Tab.search)
-                Text("Your Library")
+                PlayListPage()
                     .tabItem { Label("Your Library", systemImage: "star")
                     }.tag(Tab.library)
                 Text("Premium")
@@ -36,6 +37,10 @@ struct ContentView: View {
             }
             .accentColor(.white)
             .font(.system(size: 40))
+            
+            if let _ = playback.currentSong {
+                MiniPlayer()
+            }
         }
     }
 }
@@ -43,5 +48,10 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Playback())
+            .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
+        ContentView()
+            .environmentObject(Playback())
+            .previewDevice(PreviewDevice(rawValue: "iPhone 11"))
     }
 }

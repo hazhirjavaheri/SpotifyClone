@@ -125,11 +125,11 @@
 			children = (
 				7430FA2226DB861D0051FEEE /* Audio */,
 				7430F9F726DB824C0051FEEE /* SpotifyCloneApp.swift */,
+				7430F9F926DB824C0051FEEE /* ContentView.swift */,
 				7430FA2426DB867D0051FEEE /* Colors.swift */,
 				7430FA2B26DB891B0051FEEE /* Playback.swift */,
 				7430FA3C26DB963C0051FEEE /* Views */,
 				7430FA2A26DB87200051FEEE /* Models */,
-				7430F9F926DB824C0051FEEE /* ContentView.swift */,
 				7430F9FB26DB824E0051FEEE /* Assets.xcassets */,
 				7430FA0026DB824E0051FEEE /* Info.plist */,
 				7430F9FD26DB824E0051FEEE /* Preview Content */,
