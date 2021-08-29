@@ -13,7 +13,6 @@
 		7430F9FF26DB824E0051FEEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7430F9FE26DB824E0051FEEE /* Preview Assets.xcassets */; };
 		7430FA0A26DB824E0051FEEE /* SpotifyCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA0926DB824E0051FEEE /* SpotifyCloneTests.swift */; };
 		7430FA1526DB824E0051FEEE /* SpotifyCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA1426DB824E0051FEEE /* SpotifyCloneUITests.swift */; };
-		7430FA2326DB861D0051FEEE /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA2226DB861D0051FEEE /* Audio */; };
 		7430FA2526DB867D0051FEEE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2426DB867D0051FEEE /* Colors.swift */; };
 		7430FA2726DB86D30051FEEE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2626DB86D30051FEEE /* Song.swift */; };
 		7430FA2926DB870F0051FEEE /* PlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2826DB870F0051FEEE /* PlayList.swift */; };
@@ -27,6 +26,18 @@
 		7430FA3B26DB95E20051FEEE /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3A26DB95E20051FEEE /* MiniPlayer.swift */; };
 		7430FA3E26DB96930051FEEE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3D26DB96930051FEEE /* Player.swift */; };
 		7430FA4026DB99230051FEEE /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3F26DB99230051FEEE /* Actions.swift */; };
+		7430FA4D26DB9C4E0051FEEE /* Flute Concerto in D major K.314 Allegro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4126DB9C460051FEEE /* Flute Concerto in D major K.314 Allegro.mp3 */; };
+		7430FA4E26DB9C4E0051FEEE /* Piano Concerto in A major K 488 Adagio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4226DB9C460051FEEE /* Piano Concerto in A major K 488 Adagio.mp3 */; };
+		7430FA4F26DB9C4E0051FEEE /* Ave Maria.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4326DB9C470051FEEE /* Ave Maria.mp3 */; };
+		7430FA5026DB9C4E0051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4426DB9C480051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 */; };
+		7430FA5126DB9C4E0051FEEE /* Egmont Overture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4526DB9C490051FEEE /* Egmont Overture.mp3 */; };
+		7430FA5226DB9C4E0051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4626DB9C490051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 */; };
+		7430FA5326DB9C4E0051FEEE /* Ständchen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4726DB9C4A0051FEEE /* Ständchen.mp3 */; };
+		7430FA5426DB9C4E0051FEEE /* Symphony No.5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4826DB9C4B0051FEEE /* Symphony No.5.mp3 */; };
+		7430FA5526DB9C4E0051FEEE /* Impromptu in E flat major.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4926DB9C4B0051FEEE /* Impromptu in E flat major.mp3 */; };
+		7430FA5626DB9C4E0051FEEE /* Violin Romance No.2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4A26DB9C4C0051FEEE /* Violin Romance No.2.mp3 */; };
+		7430FA5726DB9C4E0051FEEE /* Siciliano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4B26DB9C4D0051FEEE /* Siciliano.mp3 */; };
+		7430FA5826DB9C4E0051FEEE /* Eine kleine Nachtmusik Allegro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4C26DB9C4E0051FEEE /* Eine kleine Nachtmusik Allegro.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +70,6 @@
 		7430FA1026DB824E0051FEEE /* SpotifyCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7430FA1426DB824E0051FEEE /* SpotifyCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyCloneUITests.swift; sourceTree = "<group>"; };
 		7430FA1626DB824E0051FEEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7430FA2226DB861D0051FEEE /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		7430FA2426DB867D0051FEEE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7430FA2626DB86D30051FEEE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		7430FA2826DB870F0051FEEE /* PlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayList.swift; sourceTree = "<group>"; };
@@ -73,6 +83,18 @@
 		7430FA3A26DB95E20051FEEE /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
 		7430FA3D26DB96930051FEEE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		7430FA3F26DB99230051FEEE /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		7430FA4126DB9C460051FEEE /* Flute Concerto in D major K.314 Allegro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Flute Concerto in D major K.314 Allegro.mp3"; sourceTree = "<group>"; };
+		7430FA4226DB9C460051FEEE /* Piano Concerto in A major K 488 Adagio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Piano Concerto in A major K 488 Adagio.mp3"; sourceTree = "<group>"; };
+		7430FA4326DB9C470051FEEE /* Ave Maria.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ave Maria.mp3"; sourceTree = "<group>"; };
+		7430FA4426DB9C480051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The 4 Seasons Concerto No.1 in E major Spring.mp3"; sourceTree = "<group>"; };
+		7430FA4526DB9C490051FEEE /* Egmont Overture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Egmont Overture.mp3"; sourceTree = "<group>"; };
+		7430FA4626DB9C490051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3"; sourceTree = "<group>"; };
+		7430FA4726DB9C4A0051FEEE /* Ständchen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ständchen.mp3"; sourceTree = "<group>"; };
+		7430FA4826DB9C4B0051FEEE /* Symphony No.5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Symphony No.5.mp3"; sourceTree = "<group>"; };
+		7430FA4926DB9C4B0051FEEE /* Impromptu in E flat major.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Impromptu in E flat major.mp3"; sourceTree = "<group>"; };
+		7430FA4A26DB9C4C0051FEEE /* Violin Romance No.2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Violin Romance No.2.mp3"; sourceTree = "<group>"; };
+		7430FA4B26DB9C4D0051FEEE /* Siciliano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Siciliano.mp3; sourceTree = "<group>"; };
+		7430FA4C26DB9C4E0051FEEE /* Eine kleine Nachtmusik Allegro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Eine kleine Nachtmusik Allegro.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +145,7 @@
 		7430F9F626DB824C0051FEEE /* SpotifyClone */ = {
 			isa = PBXGroup;
 			children = (
-				7430FA2226DB861D0051FEEE /* Audio */,
+				7430FA5926DB9C580051FEEE /* Audio */,
 				7430F9F726DB824C0051FEEE /* SpotifyCloneApp.swift */,
 				7430F9F926DB824C0051FEEE /* ContentView.swift */,
 				7430FA2426DB867D0051FEEE /* Colors.swift */,
@@ -194,6 +216,25 @@
 				7430FA3F26DB99230051FEEE /* Actions.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7430FA5926DB9C580051FEEE /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7430FA4326DB9C470051FEEE /* Ave Maria.mp3 */,
+				7430FA4626DB9C490051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 */,
+				7430FA4526DB9C490051FEEE /* Egmont Overture.mp3 */,
+				7430FA4C26DB9C4E0051FEEE /* Eine kleine Nachtmusik Allegro.mp3 */,
+				7430FA4126DB9C460051FEEE /* Flute Concerto in D major K.314 Allegro.mp3 */,
+				7430FA4926DB9C4B0051FEEE /* Impromptu in E flat major.mp3 */,
+				7430FA4226DB9C460051FEEE /* Piano Concerto in A major K 488 Adagio.mp3 */,
+				7430FA4B26DB9C4D0051FEEE /* Siciliano.mp3 */,
+				7430FA4726DB9C4A0051FEEE /* Ständchen.mp3 */,
+				7430FA4826DB9C4B0051FEEE /* Symphony No.5.mp3 */,
+				7430FA4426DB9C480051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 */,
+				7430FA4A26DB9C4C0051FEEE /* Violin Romance No.2.mp3 */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +340,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7430FA2326DB861D0051FEEE /* Audio in Resources */,
+				7430FA4D26DB9C4E0051FEEE /* Flute Concerto in D major K.314 Allegro.mp3 in Resources */,
+				7430FA5126DB9C4E0051FEEE /* Egmont Overture.mp3 in Resources */,
+				7430FA5026DB9C4E0051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 in Resources */,
+				7430FA5726DB9C4E0051FEEE /* Siciliano.mp3 in Resources */,
+				7430FA4E26DB9C4E0051FEEE /* Piano Concerto in A major K 488 Adagio.mp3 in Resources */,
+				7430FA5626DB9C4E0051FEEE /* Violin Romance No.2.mp3 in Resources */,
 				7430F9FF26DB824E0051FEEE /* Preview Assets.xcassets in Resources */,
+				7430FA5526DB9C4E0051FEEE /* Impromptu in E flat major.mp3 in Resources */,
+				7430FA5826DB9C4E0051FEEE /* Eine kleine Nachtmusik Allegro.mp3 in Resources */,
+				7430FA4F26DB9C4E0051FEEE /* Ave Maria.mp3 in Resources */,
+				7430FA5326DB9C4E0051FEEE /* Ständchen.mp3 in Resources */,
 				7430F9FC26DB824E0051FEEE /* Assets.xcassets in Resources */,
+				7430FA5426DB9C4E0051FEEE /* Symphony No.5.mp3 in Resources */,
+				7430FA5226DB9C4E0051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
