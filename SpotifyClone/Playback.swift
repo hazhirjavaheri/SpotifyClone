@@ -97,5 +97,68 @@ final class Playback: ObservableObject {
         }
     }
     
-
+    // initializes player with current song to be played, sets the duration
+    func initPlayer() {
+        guard let song = currentSong else { return }
+        let sound = Bundle.main.path(forResource: song.name, ofType: "mp3")
+        player = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        player?.delegate = self.delegate
+        self.duration = formatter.string(from: player?.duration ?? 0) ?? "0:00"
+    }
+    
+    // starts playing the current song
+    func play() {
+        guard !playlist.isEmpty else { return }
+        initPlayer()
+        player?.play()
+        isPlaying = true
+        isPaused = false
+        finished = false
+    }
+    
+    // starts playing a song with given id
+    func play(id: UUID) {
+        guard let index = getIndex(id: id) else { return }
+        if isPlaying && index == currentSongIndex { return }
+        setCurrentSongIndex(index: index)
+        play()
+    }
+    
+    // pauses playback
+    func pause() {
+        player?.pause()
+        isPlaying = false
+        isPaused = true
+    }
+    
+    // stops the playback
+    func stop() {
+        player?.stop()
+        player = nil
+        isPaused = false
+        isPlaying = false
+    }
+    
+    // starts playing the next song in the playlist
+    func next() {
+        guard let index = currentSongIndex else { return }
+        stop()
+        if index + 1 == playlist.count { return }
+        setCurrentSongIndex(index: index + 1)
+        play()
+    }
+    
+    // starts playing the previous song in the playlist
+    func previous() {
+        guard let index = currentSongIndex else { return }
+        if index == 0 { return }
+        stop()
+        setCurrentSongIndex(index: index - 1)
+        play()
+    }
+    
+    // toggles song being liked to true or false by index
+    func likeSong(index: Int) {
+        playList[index].isFavorite.toggle()
+    }
 }
