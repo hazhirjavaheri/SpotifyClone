@@ -16,6 +16,7 @@ struct MiniPlayer: View {
             VStack {
                 Spacer()
                 Rectangle()
+                    .cornerRadius(10)
                     .opacity(0.5)
                     .frame(height: 100)
                     .offset(y: -45)

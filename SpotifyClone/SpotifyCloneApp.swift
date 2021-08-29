@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SpotifyCloneApp: App {
+    @StateObject private var playback = Playback()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(playback)
         }
     }
 }
