@@ -16,6 +16,7 @@
 		7430FA2326DB861D0051FEEE /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA2226DB861D0051FEEE /* Audio */; };
 		7430FA2526DB867D0051FEEE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2426DB867D0051FEEE /* Colors.swift */; };
 		7430FA2726DB86D30051FEEE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2626DB86D30051FEEE /* Song.swift */; };
+		7430FA2926DB870F0051FEEE /* PlayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2826DB870F0051FEEE /* PlayList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7430FA2226DB861D0051FEEE /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		7430FA2426DB867D0051FEEE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7430FA2626DB86D30051FEEE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		7430FA2826DB870F0051FEEE /* PlayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 				7430FA2226DB861D0051FEEE /* Audio */,
 				7430F9F726DB824C0051FEEE /* SpotifyCloneApp.swift */,
 				7430FA2426DB867D0051FEEE /* Colors.swift */,
-				7430FA2626DB86D30051FEEE /* Song.swift */,
+				7430FA2A26DB87200051FEEE /* Models */,
 				7430F9F926DB824C0051FEEE /* ContentView.swift */,
 				7430F9FB26DB824E0051FEEE /* Assets.xcassets */,
 				7430FA0026DB824E0051FEEE /* Info.plist */,
@@ -137,6 +139,15 @@
 				7430FA1626DB824E0051FEEE /* Info.plist */,
 			);
 			path = SpotifyCloneUITests;
+			sourceTree = "<group>";
+		};
+		7430FA2A26DB87200051FEEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7430FA2626DB86D30051FEEE /* Song.swift */,
+				7430FA2826DB870F0051FEEE /* PlayList.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7430FA2726DB86D30051FEEE /* Song.swift in Sources */,
+				7430FA2926DB870F0051FEEE /* PlayList.swift in Sources */,
 				7430F9FA26DB824C0051FEEE /* ContentView.swift in Sources */,
 				7430FA2526DB867D0051FEEE /* Colors.swift in Sources */,
 				7430F9F826DB824C0051FEEE /* SpotifyCloneApp.swift in Sources */,
