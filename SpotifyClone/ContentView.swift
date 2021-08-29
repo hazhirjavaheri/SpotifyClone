@@ -7,10 +7,36 @@
 
 import SwiftUI
 
+enum Tab {
+    case home, search, library, premium
+}
+
 struct ContentView: View {
+    @State private var selection: Tab = .library
+
+    init() {
+        UITabBar.appearance().barTintColor = UIColor.black
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            TabView(selection: $selection) {
+                Text("Home")
+                    .tabItem { Label("Home", systemImage: "house.fill")
+                    }.tag(Tab.home)
+                Text("Search")
+                    .tabItem { Label("Search", systemImage: "magnifyingglass")
+                    }.tag(Tab.search)
+                Text("Your Library")
+                    .tabItem { Label("Your Library", systemImage: "star")
+                    }.tag(Tab.library)
+                Text("Premium")
+                    .tabItem { Label("Premium", systemImage: "person.circle")
+                    }.tag(Tab.premium)
+            }
+            .accentColor(.white)
+            .font(.system(size: 40))
+        }
     }
 }
 
