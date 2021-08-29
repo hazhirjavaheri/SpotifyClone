@@ -66,6 +66,10 @@ struct MiniPlayer: View {
             }
             .padding(.horizontal)
             .shadow(color: .black, radius: 10)
+            .fullScreenCover(isPresented: $isPresented) {
+                Player(song: playback.currentSong!)
+                    .environmentObject(playback)
+            }
         }
     }
 }

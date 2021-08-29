@@ -159,6 +159,8 @@ struct Player: View {
                 playback.initPlayer()
             }
         }
+        .fullScreenCover(isPresented: $isPresented)
+            { Actions(song: song) }
     }
 }
 
