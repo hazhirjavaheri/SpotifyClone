@@ -21,6 +21,7 @@
 		7430FA2E26DB90A20051FEEE /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2D26DB90A20051FEEE /* NavigationBar.swift */; };
 		7430FA3026DB92D80051FEEE /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA2F26DB92D80051FEEE /* Artwork.swift */; };
 		7430FA3226DB93BA0051FEEE /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3126DB93BA0051FEEE /* PlayButton.swift */; };
+		7430FA3426DB94280051FEEE /* PlayListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7430FA3326DB94280051FEEE /* PlayListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		7430FA2D26DB90A20051FEEE /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		7430FA2F26DB92D80051FEEE /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		7430FA3126DB93BA0051FEEE /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		7430FA3326DB94280051FEEE /* PlayListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				7430FA2D26DB90A20051FEEE /* NavigationBar.swift */,
 				7430FA2F26DB92D80051FEEE /* Artwork.swift */,
 				7430FA3126DB93BA0051FEEE /* PlayButton.swift */,
+				7430FA3326DB94280051FEEE /* PlayListItem.swift */,
 				7430FA2A26DB87200051FEEE /* Models */,
 				7430F9F926DB824C0051FEEE /* ContentView.swift */,
 				7430F9FB26DB824E0051FEEE /* Assets.xcassets */,
@@ -300,6 +303,7 @@
 				7430FA2526DB867D0051FEEE /* Colors.swift in Sources */,
 				7430FA2E26DB90A20051FEEE /* NavigationBar.swift in Sources */,
 				7430FA2C26DB891B0051FEEE /* Playback.swift in Sources */,
+				7430FA3426DB94280051FEEE /* PlayListItem.swift in Sources */,
 				7430F9F826DB824C0051FEEE /* SpotifyCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
