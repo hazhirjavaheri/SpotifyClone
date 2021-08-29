@@ -56,4 +56,46 @@ final class Playback: ObservableObject {
             }
         }
     }
+    
+    // returns the index of a song in playlist by it's id
+    func getIndex(id: UUID) -> Int? {
+        return playlist.firstIndex(where: { $0.id == id })
+    }
+    
+    // switches song being favorited to true or false by it's id
+    func toggleFavorite(id: UUID) {
+        guard let index = getIndex(id: id) else { return }
+        playlist[index].isFavorite.toggle()
+    }
+    
+    // removes a song with it's id from playlist
+    func removeSong(id: UUID) {
+        guard !playlist.isEmpty else {
+            currentSongIndex = nil
+            return
+        }
+        guard let index = getIndex(id: id) else { return }
+        if index == currentSongIndex {
+            pause()
+            isPaused = false
+            isPlaying = false
+            currentSongIndex = nil
+        }
+        if let i = currentSongIndex, index < i {
+            currentSongIndex = i - 1
+        }
+        playlist.remove(at: index)
+    }
+    
+    // Changes the current song index in playlist
+    func setCurrentSongIndex(index: Int) {
+        if index == currentSongIndex { return }
+        if index < playlist.count && index >= 0 {
+            currentSongIndex = index
+        } else {
+            currentSongIndex = nil
+        }
+    }
+    
+
 }
