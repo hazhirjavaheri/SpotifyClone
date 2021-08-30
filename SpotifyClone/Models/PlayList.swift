@@ -13,7 +13,7 @@ var playList = [
     Song(name: "Egmont Overture", artist: "Ludvig von Beethoven", artwork: "Beethoven", isFavorite: false),
     Song(name: "Ave Maria", artist: "Franz Schubert", artwork: "Schubert", isFavorite: true),
     Song(name: "Impromptu in E flat major", artist: "Franz Schubert", artwork: "Schubert", isFavorite: false),
-    Song(name: "Ständchen", artist: "Franz Schubert", artwork: "Schubert", isFavorite: true),
+    Song(name: "Standchen", artist: "Franz Schubert", artwork: "Schubert", isFavorite: true),
     Song(name: "The 4 Seasons Concerto No.1 in E major Spring", artist: "Antovio Vivaldi",
          artwork: "Vivaldi", isFavorite: false),
     Song(name: "Siciliano", artist: "Antovio Vivaldi", artwork: "Vivaldi", isFavorite: true),
