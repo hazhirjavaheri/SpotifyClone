@@ -19,38 +19,34 @@ class AVDelegate: NSObject, AVAudioPlayerDelegate {
 final class Playback: ObservableObject {
     @Published var playlist: [Song] = playList
     @Published var isPlaylistLiked = false
-    @Published var isPlaying = false
     @Published var currentSongIndex: Int? = 0
     @Published var currentTime: String
     @Published var duration: String
     @Published var progress: TimeInterval = 0.0
     @Published var finished = false
-    
+    @Published var isPlaying = false
     private let formatter = DateComponentsFormatter()
-    private var isPaused = false
     private var delegate = AVDelegate()
-    private var player: AVAudioPlayer?
+    private var player = AVAudioPlayer()
     
     var currentSong: Song? {
-        if let index = currentSongIndex,
-           index < playlist.count, index >= 0 {
+        if !playlist.isEmpty, let index = currentSongIndex,
+           0..<playlist.count ~= index {
             return playlist[index]
         } else {
             return nil
         }
     }
-    
-    init() {
-        player?.delegate = delegate
         
+    init() {
         formatter.allowedUnits = [.minute, .second]
         formatter.unitsStyle = .positional
         formatter.zeroFormattingBehavior = [.pad]
-        duration = formatter.string(from: player?.duration ?? 0)!
-        currentTime = formatter.string(from: player?.currentTime ?? 0)!
+        duration = formatter.string(from: player.duration)!
+        currentTime = formatter.string(from: player.currentTime)!
         
         Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { [self] _ in
-            if let player = player, isPlaying {
+            if player.isPlaying {
                 currentTime = formatter.string(from: player.currentTime)!
                 progress = player.currentTime / player.duration
             }
@@ -70,27 +66,21 @@ final class Playback: ObservableObject {
     
     // removes a song with it's id from playlist
     func removeSong(id: UUID) {
-        guard !playlist.isEmpty else {
-            currentSongIndex = nil
-            return
-        }
         guard let index = getIndex(id: id) else { return }
         if index == currentSongIndex {
-            pause()
-            isPaused = false
-            isPlaying = false
+            stop()
             currentSongIndex = nil
         }
+        playlist.remove(at: index)
         if let i = currentSongIndex, index < i {
             currentSongIndex = i - 1
         }
-        playlist.remove(at: index)
     }
     
-    // Changes the current song index in playlist
+    // changes the current song index in playlist
     func setCurrentSongIndex(index: Int) {
         if index == currentSongIndex { return }
-        if index < playlist.count && index >= 0 {
+        if 0..<playlist.count ~= index {
             currentSongIndex = index
         } else {
             currentSongIndex = nil
@@ -98,45 +88,50 @@ final class Playback: ObservableObject {
     }
     
     // initializes player with current song to be played, sets the duration
-    func initPlayer() {
+    func changeSong() {
         guard let song = currentSong else { return }
         let sound = Bundle.main.path(forResource: song.name, ofType: "mp3")
         player = try! AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
-        player?.delegate = self.delegate
-        self.duration = formatter.string(from: player?.duration ?? 0) ?? "0:00"
+        player.delegate = self.delegate
+        self.duration = formatter.string(from: player.duration) ?? "0:00"
+    }
+    
+    func updateState() {
+        isPlaying = player.isPlaying
+        finished = false
     }
     
     // starts playing the current song
     func play() {
-        guard !playlist.isEmpty else { return }
-        initPlayer()
-        player?.play()
-        isPlaying = true
-        isPaused = false
-        finished = false
+        if playlist.isEmpty { return }
+        if !playlist.isEmpty, currentSongIndex == nil {
+            currentSongIndex = 0
+            changeSong()
+        }
+        if player.currentTime == 0 { changeSong() }
+        player.play()
+        updateState()
     }
     
     // starts playing a song with given id
     func play(id: UUID) {
         guard let index = getIndex(id: id) else { return }
-        if isPlaying && index == currentSongIndex { return }
+        if player.isPlaying && index == currentSongIndex { return }
         setCurrentSongIndex(index: index)
+        changeSong()
         play()
     }
     
     // pauses playback
     func pause() {
-        player?.pause()
-        isPlaying = false
-        isPaused = true
+        player.pause()
+        updateState()
     }
     
     // stops the playback
     func stop() {
-        player?.stop()
-        player = nil
-        isPaused = false
-        isPlaying = false
+        player.stop()
+        updateState()
     }
     
     // starts playing the next song in the playlist
@@ -145,6 +140,7 @@ final class Playback: ObservableObject {
         stop()
         if index + 1 == playlist.count { return }
         setCurrentSongIndex(index: index + 1)
+        changeSong()
         play()
     }
     
@@ -154,11 +150,7 @@ final class Playback: ObservableObject {
         if index == 0 { return }
         stop()
         setCurrentSongIndex(index: index - 1)
+        changeSong()
         play()
-    }
-    
-    // toggles song being liked to true or false by index
-    func likeSong(index: Int) {
-        playList[index].isFavorite.toggle()
     }
 }

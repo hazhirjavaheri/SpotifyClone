@@ -8,8 +8,8 @@
 import Foundation
 
 var playList = [
-    Song(name: "Symphony No.5", artist: "Ludvig von Beethoven", artwork: "Beethoven", isFavorite: false),
-    Song(name: "Violin Romance No.2", artist: "Ludvig von Beethoven", artwork: "Beethoven", isFavorite: true),
+    Song(name: "Violin Romance No.2", artist: "Ludvig von Beethoven", artwork: "Beethoven", isFavorite: false),
+    Song(name: "Symphony No.5", artist: "Ludvig von Beethoven", artwork: "Beethoven", isFavorite: true),
     Song(name: "Egmont Overture", artist: "Ludvig von Beethoven", artwork: "Beethoven", isFavorite: false),
     Song(name: "Ave Maria", artist: "Franz Schubert", artwork: "Schubert", isFavorite: true),
     Song(name: "Impromptu in E flat major", artist: "Franz Schubert", artwork: "Schubert", isFavorite: false),

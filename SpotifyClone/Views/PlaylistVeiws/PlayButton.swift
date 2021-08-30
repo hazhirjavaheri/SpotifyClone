@@ -25,9 +25,6 @@ struct PlayButton: View {
                 if playback.isPlaying {
                     playback.pause()
                 } else {
-                    if playback.currentSong == nil, !playback.playlist.isEmpty {
-                        playback.currentSongIndex = 0
-                    }
                     playback.play()
                 }
             }) {

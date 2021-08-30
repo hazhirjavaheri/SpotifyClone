@@ -154,10 +154,10 @@ struct Player: View {
                 Spacer()
             }
             .foregroundColor(.white)
-            .onAppear {
-                guard !playback.isPlaying else { return }
-                playback.initPlayer()
-            }
+//            .onAppear {
+//                guard !playback.isPlaying else { return }
+//                playback.changeSong()
+//            }
         }
         .fullScreenCover(isPresented: $isPresented)
             { Actions(song: song) }
