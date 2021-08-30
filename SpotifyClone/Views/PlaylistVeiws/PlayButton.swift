@@ -17,7 +17,7 @@ struct PlayButton: View {
     var body: some View {
         VStack {
             Spacer()
-                .frame(height:  (offset + initialButtonOffset * ratio))
+                .frame(height:  offset + initialButtonOffset * ratio)
             Text("Play List #1")
                 .font(.title)
                 .foregroundColor(.white)

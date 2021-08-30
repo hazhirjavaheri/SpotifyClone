@@ -32,7 +32,7 @@
 		7430FA5026DB9C4E0051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4426DB9C480051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 */; };
 		7430FA5126DB9C4E0051FEEE /* Egmont Overture.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4526DB9C490051FEEE /* Egmont Overture.mp3 */; };
 		7430FA5226DB9C4E0051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4626DB9C490051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 */; };
-		7430FA5326DB9C4E0051FEEE /* Ständchen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4726DB9C4A0051FEEE /* Ständchen.mp3 */; };
+		7430FA5326DB9C4E0051FEEE /* Standchen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4726DB9C4A0051FEEE /* Standchen.mp3 */; };
 		7430FA5426DB9C4E0051FEEE /* Symphony No.5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4826DB9C4B0051FEEE /* Symphony No.5.mp3 */; };
 		7430FA5526DB9C4E0051FEEE /* Impromptu in E flat major.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4926DB9C4B0051FEEE /* Impromptu in E flat major.mp3 */; };
 		7430FA5626DB9C4E0051FEEE /* Violin Romance No.2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7430FA4A26DB9C4C0051FEEE /* Violin Romance No.2.mp3 */; };
@@ -89,7 +89,7 @@
 		7430FA4426DB9C480051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The 4 Seasons Concerto No.1 in E major Spring.mp3"; sourceTree = "<group>"; };
 		7430FA4526DB9C490051FEEE /* Egmont Overture.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Egmont Overture.mp3"; sourceTree = "<group>"; };
 		7430FA4626DB9C490051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3"; sourceTree = "<group>"; };
-		7430FA4726DB9C4A0051FEEE /* Ständchen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ständchen.mp3"; sourceTree = "<group>"; };
+		7430FA4726DB9C4A0051FEEE /* Standchen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Standchen.mp3; sourceTree = "<group>"; };
 		7430FA4826DB9C4B0051FEEE /* Symphony No.5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Symphony No.5.mp3"; sourceTree = "<group>"; };
 		7430FA4926DB9C4B0051FEEE /* Impromptu in E flat major.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Impromptu in E flat major.mp3"; sourceTree = "<group>"; };
 		7430FA4A26DB9C4C0051FEEE /* Violin Romance No.2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Violin Romance No.2.mp3"; sourceTree = "<group>"; };
@@ -229,7 +229,7 @@
 				7430FA4926DB9C4B0051FEEE /* Impromptu in E flat major.mp3 */,
 				7430FA4226DB9C460051FEEE /* Piano Concerto in A major K 488 Adagio.mp3 */,
 				7430FA4B26DB9C4D0051FEEE /* Siciliano.mp3 */,
-				7430FA4726DB9C4A0051FEEE /* Ständchen.mp3 */,
+				7430FA4726DB9C4A0051FEEE /* Standchen.mp3 */,
 				7430FA4826DB9C4B0051FEEE /* Symphony No.5.mp3 */,
 				7430FA4426DB9C480051FEEE /* The 4 Seasons Concerto No.1 in E major Spring.mp3 */,
 				7430FA4A26DB9C4C0051FEEE /* Violin Romance No.2.mp3 */,
@@ -350,7 +350,7 @@
 				7430FA5526DB9C4E0051FEEE /* Impromptu in E flat major.mp3 in Resources */,
 				7430FA5826DB9C4E0051FEEE /* Eine kleine Nachtmusik Allegro.mp3 in Resources */,
 				7430FA4F26DB9C4E0051FEEE /* Ave Maria.mp3 in Resources */,
-				7430FA5326DB9C4E0051FEEE /* Ständchen.mp3 in Resources */,
+				7430FA5326DB9C4E0051FEEE /* Standchen.mp3 in Resources */,
 				7430F9FC26DB824E0051FEEE /* Assets.xcassets in Resources */,
 				7430FA5426DB9C4E0051FEEE /* Symphony No.5.mp3 in Resources */,
 				7430FA5226DB9C4E0051FEEE /* Concerto for 2 Corni da caccia in F major RV.539 Allegro.mp3 in Resources */,
